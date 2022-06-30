@@ -1,0 +1,81 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #96c1f8;
+}
+
+header{
+    height: 100px;
+}
+
+section{
+    background-image:url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: -20px;
+    display: flex; 
+    justify-content: center;
+}
+
+footer{
+    height: 250px;
+    background-color: #5ee1e6;
+    font-size: 18px;
+    
+}
+h1{
+    text-align: center;
+    color: #318CE7;
+}
+#bateau {
+    transform: translate(-100px, 500px);
+    animation-duration: 8s;
+    animation-name: web;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    
+} 
+p{
+    font-family: Trebuchet MS;
+    color:#FFFFFF ;
+    text-align: center;
+}
+ footer #tresor{
+margin: auto;
+display: block;
+cursor: pointer;
+  
+}
+section div{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color:#80CEE1;  
+}
+section:hover{
+    color: rgb(226, 122, 53);
+}
+div:nth-child(3):hover{
+    background-color: #7f7f7f ;
+    transform: rotate(360deg);
+    transition: 0.5s;
+    border-radius: 60px;
+
+  }
+  div:nth-child(2):hover{
+    transform:rotate(360deg);
+    background-color:#7f7f7f;
+}
+
+  @keyframes web{
+    from {
+        transform: translate(100px, 500px);
+      }
+      to {
+        transform: translate(500px, 300px);
+    }
+}
+
+    
